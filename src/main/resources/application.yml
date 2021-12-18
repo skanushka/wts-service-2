@@ -1,0 +1,12 @@
+server:
+  port: 8081
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://wts-user:wts-secret@wts-test-cluster.ngdeu.mongodb.net/wts-doc?retryWrites=true&w=majority
+
