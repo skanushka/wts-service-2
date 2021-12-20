@@ -24,7 +24,7 @@ public class CartServiceImpl implements CartService {
 	@Override
 	public Cart save(CartRequest cartRequest) {
 
-		String url = String.format("http://localhost:8080/product/%d", cartRequest.getProductId());
+		String url = String.format("http://wts-service-1:8080/product/%d", cartRequest.getProductId());
 		Cart.Product product = restTemplateBuilder.build().getForObject(url, Cart.Product.class);
 
 		Cart cart = new Cart();
